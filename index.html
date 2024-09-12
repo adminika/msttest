@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Сделайте разработку особенным и стильным" />
+  <meta name="robots" content="noodp" />
+  <meta name="keywords" content="gulp, nunjucks, webpack" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>GULP</title>
+</head>
+
+<body>
+  <div class="o-page-wrapper">
+    <header class="m-header">
+      <div class="o-container">
+        <div class="m-header__row">
+          <div class="logo">
+            <a href="#!" class="logo__link">LoremIpsum.<span>Net</span>
+            </a>
+          </div>
+          <nav class="menu-page menu js-mobile">
+
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#home" class="menu__link active">Бизнес</a>
+              </li>
+              <li class="menu__item">
+                <a href="#works" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="menu__link">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="#about" class="menu__link">Оформить заказ</a>
+              </li>
+            </ul>
+
+            <button class="mobile__btn js-mobile__btn">
+              <svg class="icon-menu icon-menu--burger">
+                <use xlink:href="./assets/images/sprites/s-mono.svg#burger"></use>
+              </svg>
+              <svg class="icon-menu icon-menu--close">
+                <use xlink:href="./assets/images/sprites/s-mono.svg#close"></use>
+              </svg>
+            </button>
+
+          </nav>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="main">
+      <section class="m-welcome">
+        <div class="m-welcome__img">
+          <picture>
+            <source srcset="./assets/images/hero-mobile.avif" type="image/avif" media="(max-width: 575.98px)" />
+            <source srcset="./assets/images/hero-mobile.webp" type="image/webp" media="(max-width: 575.98px)" />
+            <source srcset="./assets/images/hero.avif" type="image/avif" />
+            <source srcset="./assets/images/hero.webp" type="image/webp" />
+            <img src="./assets/images/hero.jpg" alt="hero" width="1919px" height="987px" />
+          </picture>
+        </div>
+        <div class="m-welcome__inner">
+
+          <div class="o-container">
+
+            <div class="m-welcome__content">
+
+              <h1 class="m-welcome__title">
+                <span>Lorem ipsum</span> dolor sit amet
+                consectetur <span>adipiscing</span>
+              </h1>
+              <p class="m-welcome__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+              <ul class="m-welcome__list">
+                <li class="m-welcome__item">Totam rem aperiam eaque ipsa</li>
+                <li class="m-welcome__item">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="m-welcome__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+              <div class="m-welcome__row">
+                <button class="o-btn o-btn--blue m-welcome__o-btn">заказать</button>
+                <button class="o-btn o-btn--white m-welcome__o-btn">подробнее</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="m-placement m-placement--bg">
+        <div class="o-container">
+          <div class="m-placement__content">
+
+            <h2 class="m-placement__title">Оформление <span>Заказа</span>
+            </h2>
+            <p class="m-placement__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+            <ul class="work-scheme__list">
+              <li class="work-scheme__item">
+                <span class="work-scheme__icon">
+                  <svg class="icon icon--search">
+                    <use xlink:href="./assets/images/sprites/s-mono.svg#search"></use>
+                  </svg>
+                </span>
+                <span class="work-scheme__text">Lorem ipsum dolor
+                  sit amet</span>
+              </li>
+              <li class="work-scheme__item">
+                <span class="work-scheme__icon">
+                  <svg class="icon icon--percentage">
+                    <use xlink:href="./assets/images/sprites/s-mono.svg#percentage"></use>
+                  </svg>
+                </span>
+                <span class="work-scheme__text">Сonsecteturadipiscing elit</span>
+              </li>
+              <li class="work-scheme__item">
+                <span class="work-scheme__icon">
+                  <svg class="icon icon--file-medical">
+                    <use xlink:href="./assets/images/sprites/s-mono.svg#file-medical"></use>
+                  </svg>
+                </span>
+                <span class="work-scheme__text">Sed do eiusmod tempor</span>
+              </li>
+              <li class="work-scheme__item">
+                <span class="work-scheme__icon">
+                  <svg class="icon icon--envelope">
+                    <use xlink:href="./assets/images/sprites/s-mono.svg#envelope"></use>
+                  </svg>
+                </span>
+                <span class="work-scheme__text">Esse cillum dolore
+                  eu fugiat</span>
+              </li>
+              <li class="work-scheme__item">
+                <span class="work-scheme__icon">
+                  <svg class="icon icon--certificate">
+                    <use xlink:href="./assets/images/sprites/s-mono.svg#certificate"></use>
+                  </svg>
+                </span>
+                <span class="work-scheme__text">Excepteur sint occaecat cupidatat non proident</span>
+              </li>
+            </ul>
+
+            <form class="form">
+
+              <div class="select-wrapper">
+                <select name="system" id="system-select">
+                  <option selected disabled>Выберите тип системы</option>
+                  <option value="ext4">Ext4 (Fourth Extended Filesystem)</option>
+                  <option value="btrfs">Btrfs (B-tree filesystem)</option>
+                  <option value="xfs">XFS (X File System)</option>
+                  <option value="zfs">ZFS (Zettabyte File System)</option>
+                  <option value="ntfs">NTFS (New Technology File System)</option>
+                  <option value="fat32">FAT32 (File Allocation Table)</option>
+                </select>
+              </div>
+
+              <label class="input-label input-label-email">
+                <input class="input" type="email" size="40" name="email" placeholder="Ваш e-mail">
+              </label>
+              <label class="input-label input-label-name">
+                <input class="input" type="text" size="40" name="name" placeholder="Ваше имя">
+              </label>
+
+              <label class="input-label-range">
+                <div class="row">
+                  <div class="range-text">Sed ut perspiciatis, unde omnis iste natus</div>
+                  <div class="range-out">
+                    <output for="flying" name="level">75 </output>
+                    <span>%</span>
+                  </div>
+                </div>
+                <input name="flevel" id="flying" type="range" min="1" max="100" value="75" step="1" oninput="level.value = flevel.valueAsNumber">
+              </label>
+
+              <label class="input-label-file">
+                <div>
+                  <img class="upload-image" src="./assets/images/file.svg">
+                  <span class="input-title">Прикрепить файл</span>
+                </div>
+                <input class="input" type="file" name="file" multiple>
+              </label>
+
+
+
+              <button type="submit" class="o-btn o-btn--blue form__btn">Отправить</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="o-container">
+        <div class="m-footer__row">
+          <div class="copyright">&copy; 2018 <span>«LoremIpsum.net»</span> Все права защищены.</div>
+          <ul class="payment">
+            <li class="payment__item">
+              <svg class="payment__icon">
+                <use xlink:href="./assets/images/sprites/s-mono.svg#qiwi"></use>
+              </svg>
+              <span>Qiwi wallet</span>
+            </li>
+            <li class="payment__item">
+              <svg class="payment__icon">
+                <use xlink:href="./assets/images/sprites/s-multi.svg#ym"></use>
+              </svg>
+              <span>Yandex Money</span>
+            </li>
+            <li class="payment__item">
+              <svg class="payment__icon">
+                <use xlink:href="./assets/images/sprites/s-mono.svg#webm"></use>
+              </svg>
+              <span>Web Money</span>
+            </li>
+          </ul>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@ipsum228.com">
+                <svg class="contacts__icon">
+                  <use xlink:href="./assets/images/sprites/s-mono.svg#mail"></use>
+                </svg>
+                <span>info@ipsum228.com</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="http://vk.ru" target="_blank" rel="noopener noreferrer">
+                <svg class="contacts__icon">
+                  <use xlink:href="./assets/images/sprites/s-mono.svg#vk"></use>
+                </svg>
+                <span>Мы вконтакте</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

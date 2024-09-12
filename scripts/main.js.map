@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/blocks/modules/welcome/welcome.js", "src/blocks/components/menu/menu.js", "src/scripts/index.js"],
+  "sourcesContent": ["console.log('Hello Welcome !!!');\n", "const menuNav = document.querySelector('.js-mobile');\nconst menuBtn = document.querySelector('.js-mobile__btn');\n\nmenuBtn.onclick = () => {\n  menuNav.classList.toggle('mobile');\n};\n", "import './import/modules.js';\nimport './import/components.js';\n\n// import $ from \"jquery\";\n\n// $(document).ready(() => {\n//   alert(\"JS is work\");\n//   console.log(\"JS is work\");\n// });\n\nconsole.log('JS is Work Gulp !');\n"],
+  "mappings": "MAAA,QAAQ,IAAI,mBAAmB,ECA/B,IAAMA,EAAU,SAAS,cAAc,YAAY,EAC7CC,EAAU,SAAS,cAAc,iBAAiB,EAExDA,EAAQ,QAAU,IAAM,CACtBD,EAAQ,UAAU,OAAO,QAAQ,CACnC,ECKA,QAAQ,IAAI,mBAAmB",
+  "names": ["menuNav", "menuBtn"]
+}
